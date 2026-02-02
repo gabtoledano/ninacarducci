@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://code.jquery.com" />
+    <link rel="dns-prefetch" href="https://code.jquery.com" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+        rel="stylesheet"
+    /></noscript>
   </head>
   <body>
     <div class="top-header">
@@ -74,6 +84,7 @@
             src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
             class="d-block w-100"
             alt="..."
+            loading="lazy"
           />
         </div>
         <div class="carousel-item">
@@ -81,6 +92,7 @@
             src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
             class="d-block w-100"
             alt="..."
+            loading="lazy"
           />
         </div>
       </div>
@@ -137,54 +149,63 @@
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
             alt=""
+            loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
             alt=""
+            loading="lazy"
           />
         </div>
       </div>
@@ -281,7 +302,7 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="" />
+          <img src="./assets/images/camera.webp" alt="" loading="lazy" />
         </div>
       </div>
     </div>
