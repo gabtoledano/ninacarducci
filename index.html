@@ -8,6 +8,74 @@
       name="description"
       content="Nina Carducci, photographe professionnelle à Paris. Shooting photo, retouches et albums personnalisés pour vos moments précieux."
     />
+
+    <!-- Open Graph pour Facebook/LinkedIn -->
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe professionnelle"
+    />
+    <meta
+      property="og:description"
+      content="Photographe professionnelle à Bordeaux. Shooting photo, retouches et albums personnalisés pour vos moments précieux."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://gabtoledano.github.io/ninacarducci/"
+    />
+    <meta
+      property="og:image"
+      content="https://gabtoledano.github.io/ninacarducci/assets/images/nina.webp"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe professionnelle"
+    />
+    <meta
+      name="twitter:description"
+      content="Photographe professionnelle à Bordeaux. Shooting photo, retouches et albums personnalisés."
+    />
+    <meta
+      name="twitter:image"
+      content="https://gabtoledano.github.io/ninacarducci/assets/images/nina.webp"
+    />
+
+    <!-- Schema.org LocalBusiness pour Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "image": "https://gabtoledano.github.io/ninacarducci/assets/images/nina.webp",
+        "@id": "",
+        "url": "https://gabtoledano.github.io/ninacarducci/",
+        "telephone": "0556677889",
+        "priceRange": "50€-400€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.8465744,
+          "longitude": -0.6065805
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        "sameAs": "https://www.instagram.com/ninacarducci.photo/"
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://code.jquery.com" />
@@ -57,6 +125,7 @@
       <section
         id="carouselExampleIndicators"
         class="carousel slide"
+        data-bs-ride="carousel"
         aria-label="Carrousel de photos"
       >
         <div class="carousel-indicators">
