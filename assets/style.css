@@ -87,12 +87,16 @@ body {
   font-family: "Spectral";
   font-weight: 800;
   font-style: italic;
+  font-size: 16px;
   width: 60%;
+}
+
+.about-me__description {
+  font-size: 14px;
 }
 
 #about-me p {
   width: 80%;
-  font-size: 14px;
 }
 
 #gallery {
@@ -110,7 +114,7 @@ body {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #000;
   background-color: #beb45a;
   border-radius: 0;
 }
@@ -162,7 +166,7 @@ body {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
-  font-size: inherit;
+  font-size: 40px;
 }
 
 .quote__author {
